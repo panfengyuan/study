@@ -1,0 +1,18 @@
+.todo-box {
+    width: 50%;
+    min-height: 300px;
+    margin: 50px auto;
+    background-color: #dddddd;
+}
+
+.cross-out {
+    text-decoration: line-through;
+}
+
+.item-div {
+    margin: 10px;
+}
+
+.item-span {
+    padding: 5px 10px;
+}

@@ -1,0 +1,12 @@
+<p>two works!</p>
+<div class="top_box">
+    <!-- 测试父级的title变化与传给子组件的属性变化 -->
+    <h3>父组件动态修改传给子组件的数据title="study"</h3>
+    <input type="text" (input)="title = $event.target.value">
+    <p>{{title}}</p>
+</div>
+<div class="todo-box">
+    <app-input-output [titleVal]="title" (newItemEvent)="addfn($event)"></app-input-output>
+    <app-todo [adata]="items"></app-todo>
+
+</div>

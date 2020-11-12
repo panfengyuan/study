@@ -1,0 +1,5 @@
+<ul class="navBox">
+    <li *ngFor="let item of navData;let i=index" [ngStyle]="{'color':i === selectIndex? navActiveColor:navColor}" (click)="clickNav(i)">
+        {{item.title}}
+    </li>
+</ul>

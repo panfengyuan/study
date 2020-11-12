@@ -1,0 +1,5 @@
+<h3>子组件和父组件之间的通信</h3>
+<input type="text" [value]="iVal" #todo (input)="iVal=$event.target.value">
+<button (click)="addItem(todo.value)">add</button>
+<p>@input:进来的值{{titleVal}}</p>
+<p>input val is :{{iVal}}</p>

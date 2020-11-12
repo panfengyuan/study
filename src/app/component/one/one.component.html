@@ -1,0 +1,15 @@
+<p>one works!</p>
+<div class="todo-box">
+    <div>
+        <input type="text" [value]="infoText" (input)="infoText = $event.target.value">
+        <button class="button" (click)="onWrite()">Add</button>
+        <p>Todo is content: {{infoText}}</p>
+    </div>
+    <div *ngFor="let item of list;let todoId=index">
+        <input type="checkbox" (click)="onCheckbox($event.target.checked,todoId)">
+        <span>{{todoId+1}}</span>
+        <span [ngClass]="item.type? 'todo-item-del' : ' '">{{item.name}}</span>
+        <button (click)="delSingle(todoId)">X</button>
+    </div>
+    <button (click)="onDelSelect()">Delete select</button>
+</div>

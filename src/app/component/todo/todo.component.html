@@ -1,0 +1,6 @@
+<div *ngFor="let subItem of adata;let aid=index" class="item-div">
+    <input type="checkbox" (click)="selectItem($event.target.checked,aid)">
+    <span class="item-span" [ngClass]="subItem.type?'cross-out':''">{{subItem.name}}</span>
+    <button (click)="delSig(aid)">删除</button>
+</div>
+<button (click)="delSel()">delSel</button>

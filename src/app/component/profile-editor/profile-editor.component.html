@@ -1,0 +1,44 @@
+<p>FormGroup</p>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>firstName: 
+        <input type="text" class="labelInput" formControlName="firstName" required>
+    </label>
+    <label>
+        lastName:
+        <input type="text" class="labelInput" formControlName="lastName">
+    </label>
+    <div formGroupName="address">
+        <h4>Address</h4>
+        <label>
+            Street:
+            <input type="text" class="labelInput" formControlName="street">
+        </label>
+        <label>
+            City:
+            <input type="text" class="labelInput" formControlName="city">
+        </label>
+        <label>
+            State:
+            <input type="text" class="labelInput" formControlName="state">
+        </label>
+        <label>
+            Zip Code:
+            <input type="text" class="labelInput" formControlName="zip">
+        </label>
+    </div>
+    <div formArrayName="aliases">
+        <h3>Aliases</h3> <button class="minbutton" (click)="addAlias()">Add Alias</button>
+
+        <div *ngFor="let alias of aliases.controls; let i=index">
+            <!-- The repeated alias template -->
+            <label>
+            Alias:
+            <input type="text" class="labelInput" [formControlName]="i">
+          </label>
+        </div>
+    </div>
+
+    <button class="button" type="submit">Submit</button>
+    <button class="button" (click)="updateProfile()">updata profile</button>
+</form>
+<p>form status:{{profileForm.status}}</p>

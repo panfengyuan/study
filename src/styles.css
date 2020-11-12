@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body,
+app-root {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.labelInput {
+    display: block;
+    height: 28px;
+    margin: 10px 0;
+}
+
+.button {
+    display: block;
+    min-width: 50px;
+    padding: 5px;
+    border: 1px solid #6dc1c4;
+    background: #ffffff;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.minbutton {
+    display: block;
+    min-width: 50px;
+    padding: 2px 5px;
+    border: 1px solid #6dc1c4;
+    background: #6dc1c4;
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.inlinebutton {
+    display: inline-block;
+    height: 26px;
+    min-width: 50px;
+    background-color: lightsteelblue;
+    color: #ffffff;
+    border: none;
+    margin: 5px 16px;
+    padding: 0 10px;
+    border-radius: 3px;
+}

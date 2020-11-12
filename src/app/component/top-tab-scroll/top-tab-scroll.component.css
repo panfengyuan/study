@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navBox {
+    width: 60%;
+    height: 30px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightseagreen;
+}
+
+.navBox li {
+    display: inline-block;
+    line-height: 30px;
+    white-space: nowrap;
+    color: #ffffff;
+}

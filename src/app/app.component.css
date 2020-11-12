@@ -1,0 +1,47 @@
+.todo-box {
+    width: 50%;
+    min-height: 300px;
+    margin: 50px auto;
+    background-color: #dddddd;
+}
+
+span {
+    padding: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: rgb(168, 208, 241);
+    border: none;
+    border: 1px solid #ffffff;
+}
+
+.todo-item-del {
+    text-decoration: line-through;
+}
+
+.top_box {
+    width: 50%;
+    margin: 30px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.leftNavBox {
+    width: 10%;
+    float: left;
+}
+
+.leftNavItem {
+    height: 20px;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.rightBox {
+    width: 80%;
+    padding-left: 20px;
+    float: left;
+}
