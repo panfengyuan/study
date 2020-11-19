@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routes/app-routing.module';
@@ -17,6 +17,8 @@ import { DashboardComponent } from './component/heroesOUt/dashboard/dashboard.co
 import { HeroseListComponent } from './component/heroesOUt/herose-list/herose-list.component';
 import { HeroseDetailComponent } from './component/heroesOUt/herose-detail/herose-detail.component';
 import { MessagesComponent } from './component/heroesOUt/messages/messages.component';
+import { OperatorComponent } from './component/operator/operator.component';
+import { DataSetClassComponent } from './component/data-set-class/data-set-class.component';
 
 
 @NgModule({
@@ -35,11 +37,14 @@ import { MessagesComponent } from './component/heroesOUt/messages/messages.compo
     HeroseListComponent,
     HeroseDetailComponent,
     MessagesComponent,
+    OperatorComponent,
+    DataSetClassComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

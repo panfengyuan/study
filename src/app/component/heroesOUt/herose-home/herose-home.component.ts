@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-herose-home',
@@ -6,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./herose-home.component.css']
 })
 export class HeroseHomeComponent implements OnInit {
+  
   items=[];
-  constructor() { }
+  selectedId: number;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

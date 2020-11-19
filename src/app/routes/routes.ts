@@ -9,19 +9,24 @@ import { DashboardComponent } from '../component/heroesOUt/dashboard/dashboard.c
 import { HeroseListComponent } from '../component/heroesOUt/herose-list/herose-list.component';
 import { HeroseDetailComponent } from '../component/heroesOUt/herose-detail/herose-detail.component';
 import { MessagesComponent } from '../component/heroesOUt/messages/messages.component';
+import { OperatorComponent } from '../component/operator/operator.component'
+import { DataSetClassComponent } from '../component/data-set-class/data-set-class.component';
+
 
 export const routes: Routes =[ 
-    { path:'', component: TwoComponent},
-    { path:'one', component: OneComponent},
-    { path:'two', component: TwoComponent},
-    { path:'pingduo', component: PingduoComponent},
-    { path:'nameeditor', component: NameEditorComponent},
-    { path:'profileeditor', component: ProfileEditorComponent},
+    { path:'', component: TwoComponent },
+    { path:'one', component: OneComponent },
+    { path:'two', component: TwoComponent },
+    { path:'pingduo', component: PingduoComponent },
+    { path:'nameeditor', component: NameEditorComponent },
+    { path:'profileeditor', component: ProfileEditorComponent },
     { path:'herosehome', component: HeroseHomeComponent,children:[
         { path:'tour', component: DashboardComponent },
         { path:'heroeslist', component: HeroseListComponent },
-        { path:'herosedetail', component: HeroseDetailComponent },
-        { path:'', component: DashboardComponent},
+        { path:'herosedetail/:id', component: HeroseDetailComponent },
+        { path:'', component: DashboardComponent },
     ] },
-    { path:'**', component: TwoComponent},
+    { path:'operator', component: OperatorComponent },
+    { path:'data-set-class', component: DataSetClassComponent },
+    { path:'**', component: TwoComponent },
 ]
